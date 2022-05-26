@@ -10,7 +10,7 @@
 # Ejercicios de práctica numérica
 
 # Condicionales anidados
-numero_1 = 7
+numero_1 = 3
 numero_2 = -2
 
 # Verifique si el numero_1 es mayor a 5
@@ -23,9 +23,20 @@ numero_2 = -2
 #       --> En caso afirmativo imprima en pantalla "Resp=3"
 #       --> En caso negativo imprima en pantalla "Resp=4"
 
+if numero_1 > 5:
+    if numero_2 > 0:
+        print ('Resp=1')
+    else:
+        print ('Resp=2')    
+if numero_1 <= 5:
+    if numero_2 > 5:
+        print ('Resp=3')
+    else:
+        print ('Resp=4')
+
 # Verifique la calificación de un estudiante según su
 # puntaje en un examen
-puntaje = 70
+puntaje = 59
 
 # Si el puntaje es mayor igual a 90 --> imprimir A
 # Si el puntaje es mayor igual a 80 --> imprimir B
@@ -35,3 +46,32 @@ puntaje = 70
 
 # Debe imprimir en pantalla la calificacion
 # Utilizar "if" anidados
+
+if puntaje >= 90:
+    print ('La calificacion es un A')
+elif puntaje >= 80 and puntaje <= 89:
+    print ('La calificacion es un B')
+elif puntaje >= 70 and puntaje <= 79:
+    print ('La calificacion es un C')
+elif puntaje >= 60 and puntaje <= 69:
+    print ('La calificacion es un D')
+else:
+    print ('La calificacion es un F')
+
+# Otra manera
+
+if puntaje >= 90:
+   print('tu nota es A')
+else:
+    if puntaje >= 80:
+        print('tu nota ahora es B')
+    else: 
+        if puntaje >= 70:
+            print('tu nota ahora es C')
+        else: 
+            if puntaje >= 60:
+                print('tu nota ahora es D')
+            else: 
+                if puntaje < 60:
+                    print('tu nota ahora es F')
+
